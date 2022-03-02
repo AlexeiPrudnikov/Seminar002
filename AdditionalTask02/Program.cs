@@ -3,12 +3,10 @@ string GetAge(DateTime interestDate, DateTime birthday)
 {
     TimeSpan period = interestDate - birthday;
     int days = Convert.ToInt32((interestDate - birthday).TotalDays);
-    Console.WriteLine(days);
     string result = "";
-    DateTime age = new DateTime();
-    age.AddDays(days);
+    DateTime age = new DateTime().AddDays(days);
     result = "На " + interestDate.ToShortDateString() + " человеку, рожденному " + birthday.ToShortDateString() + " -> " +
-             age.Year + " лет ";
+             (age.Year - 1) + " лет ";
     return result;
 }
 try
