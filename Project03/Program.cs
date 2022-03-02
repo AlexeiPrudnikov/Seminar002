@@ -11,7 +11,7 @@ string IsWeekend (int dayNumber)
     }
     else
     {
-        return "Дня недели с таким номером не сущществует";
+        return "Дня недели с таким номером не существует";
     }
 }
 try
